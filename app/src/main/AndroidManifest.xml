@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="portal.msit.com.msitportal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".GuestDrawerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test2Activity"
+            android:label="@string/title_activity_test2" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".StudentDrawerActivity"
+            android:label="@string/title_activity_student_drawer" >
+        </activity>
+        <activity
+            android:name=".StaffDrawerActivity"
+            android:label="@string/title_activity_staff_drawer" >
+        </activity>
+        <activity
+            android:name=".HodDrawerActivity"
+            android:label="@string/title_activity_hod_drawer" >
+        </activity>
+        <activity
+            android:name=".ParentDrawerActivity"
+            android:label="@string/title_activity_parent_drawer" >
+        </activity>
+        <activity
+            android:name=".AboutMsitActivity"
+            android:label="@string/title_activity_about_msit" >
+        </activity>
+        <activity
+            android:name=".PortalActivity"
+            android:label="@string/title_activity_portal" >
+        </activity>
+        <activity
+            android:name=".Register_Parent"
+            android:label="@string/title_activity_register__parent" >
+        </activity>
+        <activity
+            android:name=".Register_Staff"
+            android:label="@string/title_activity_register__staff" >
+        </activity>
+        <activity
+            android:name=".Register_Student"
+            android:label="@string/title_activity_register__student" >
+        </activity>
+        <activity
+            android:name=".Register_HOD"
+            android:label="@string/title_activity_register__hod" >
+        </activity>
+        <activity
+            android:name=".Login_Student"
+            android:label="@string/title_activity_login__student" >
+        </activity>
+        <activity
+            android:name=".Login_Staff"
+            android:label="@string/title_activity_login__staff" >
+        </activity>
+        <activity
+            android:name=".Login_Parent"
+            android:label="@string/title_activity_login__parent" >
+        </activity>
+        <activity
+            android:name=".Login_HOD"
+            android:label="@string/title_activity_login__hod" >
+        </activity>
+        <activity
+            android:name=".CourseActivity"
+            android:label="@string/title_activity_course" >
+        </activity>
+        <activity
+            android:name=".SyllabusActivity"
+            android:label="@string/title_activity_syllabus" >
+        </activity>
+        <activity
+            android:name=".SemesterActivity"
+            android:label="@string/title_activity_semester" >
+        </activity>
+        <activity
+            android:name=".CSEActivity"
+            android:label="@string/title_activity_cse" >
+        </activity>
+        <activity
+            android:name=".EEEActivity"
+            android:label="@string/title_activity_eee" >
+        </activity>
+        <activity
+            android:name=".ECEActivity"
+            android:label="@string/title_activity_ece" >
+        </activity>
+        <activity
+            android:name=".ITActivity"
+            android:label="@string/title_activity_it" >
+        </activity>
+        <activity
+            android:name=".FAQActivity"
+            android:label="@string/title_activity_faq" >
+        </activity>
+        <activity
+            android:name=".FavoriteActivity"
+            android:label="@string/title_activity_favorite" >
+        </activity>
+        <activity
+            android:name=".ReminderActivity"
+            android:label="@string/title_activity_reminder" >
+        </activity>
+        <activity
+            android:name=".Sticky_ReminderActivity"
+            android:label="@string/title_activity_sticky__reminder" >
+        </activity>
+        <activity
+            android:name=".MarksheetActivity"
+            android:label="@string/title_activity_marksheet" >
+        </activity>
+        <activity
+            android:name=".AttendanceActivity"
+            android:label="@string/title_activity_attendance" >
+        </activity>
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/title_activity_events" >
+        </activity>
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/title_activity_gallery" >
+        </activity>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+    </application>
+
+</manifest>
