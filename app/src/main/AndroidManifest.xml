@@ -6,12 +6,22 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!--
  The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but are recommended.
     -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="portal.msit.com.msitportal.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="portl.msit.com.msitportal.permission.MAPS_RECEIVE" />
 
     <application
         android:allowBackup="true"
@@ -23,10 +33,10 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyDYbWDRLbdsXzT9TNjoCnWRYl0JyfUPIF0" />
 
         <activity
-            android:name=".GuestDrawerActivity"
+            android:name=".Drawer.GuestDrawerActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -34,7 +44,7 @@
             android:label="@string/title_activity_test" >
         </activity>
         <activity
-            android:name=".HomeActivity"
+            android:name=".GuestDrawer.HomeActivity"
             android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,129 +57,284 @@
             android:label="@string/title_activity_test2" >
         </activity>
         <activity
-            android:name=".ProfileActivity"
+            android:name=".StudentDrawer.ProfileActivity"
             android:label="@string/title_activity_profile" >
         </activity>
         <activity
-            android:name=".StudentDrawerActivity"
+            android:name=".Drawer.StudentDrawerActivity"
             android:label="@string/title_activity_student_drawer" >
         </activity>
         <activity
-            android:name=".StaffDrawerActivity"
+            android:name=".Drawer.StaffDrawerActivity"
             android:label="@string/title_activity_staff_drawer" >
         </activity>
         <activity
-            android:name=".HodDrawerActivity"
+            android:name=".Drawer.HodDrawerActivity"
             android:label="@string/title_activity_hod_drawer" >
         </activity>
         <activity
-            android:name=".ParentDrawerActivity"
+            android:name=".Drawer.ParentDrawerActivity"
             android:label="@string/title_activity_parent_drawer" >
         </activity>
         <activity
-            android:name=".AboutMsitActivity"
+            android:name=".GuestDrawer.AboutMsitActivity"
             android:label="@string/title_activity_about_msit" >
         </activity>
         <activity
-            android:name=".PortalActivity"
+            android:name=".LoginModules.PortalActivity"
             android:label="@string/title_activity_portal" >
         </activity>
         <activity
-            android:name=".Register_Parent"
+            android:name=".LoginModules.Register_Parent"
             android:label="@string/title_activity_register__parent" >
         </activity>
         <activity
-            android:name=".Register_Staff"
+            android:name=".LoginModules.Register_Staff"
             android:label="@string/title_activity_register__staff" >
         </activity>
         <activity
-            android:name=".Register_Student"
+            android:name=".LoginModules.Register_Student"
             android:label="@string/title_activity_register__student" >
         </activity>
         <activity
-            android:name=".Register_HOD"
+            android:name=".LoginModules.Register_HOD"
             android:label="@string/title_activity_register__hod" >
         </activity>
         <activity
-            android:name=".Login_Student"
+            android:name=".LoginModules.Login_Student"
             android:label="@string/title_activity_login__student" >
         </activity>
         <activity
-            android:name=".Login_Staff"
+            android:name=".LoginModules.Login_Staff"
             android:label="@string/title_activity_login__staff" >
         </activity>
         <activity
-            android:name=".Login_Parent"
+            android:name=".LoginModules.Login_Parent"
             android:label="@string/title_activity_login__parent" >
         </activity>
         <activity
-            android:name=".Login_HOD"
+            android:name=".LoginModules.Login_HOD"
             android:label="@string/title_activity_login__hod" >
         </activity>
         <activity
-            android:name=".CourseActivity"
+            android:name=".GuestDrawer.CourseActivity"
             android:label="@string/title_activity_course" >
         </activity>
         <activity
-            android:name=".SyllabusActivity"
+            android:name=".GuestDrawer.SyllabusActivity"
             android:label="@string/title_activity_syllabus" >
         </activity>
         <activity
-            android:name=".SemesterActivity"
+            android:name=".GuestDrawer.SemesterActivity"
             android:label="@string/title_activity_semester" >
         </activity>
         <activity
-            android:name=".CSEActivity"
+            android:name=".GuestDrawer.CSEActivity"
             android:label="@string/title_activity_cse" >
         </activity>
         <activity
-            android:name=".EEEActivity"
+            android:name=".GuestDrawer.EEEActivity"
             android:label="@string/title_activity_eee" >
         </activity>
         <activity
-            android:name=".ECEActivity"
+            android:name=".GuestDrawer.ECEActivity"
             android:label="@string/title_activity_ece" >
         </activity>
         <activity
-            android:name=".ITActivity"
+            android:name=".GuestDrawer.ITActivity"
             android:label="@string/title_activity_it" >
         </activity>
         <activity
-            android:name=".FAQActivity"
+            android:name=".GuestDrawer.FAQActivity"
             android:label="@string/title_activity_faq" >
         </activity>
         <activity
-            android:name=".FavoriteActivity"
+            android:name=".StudentDrawer.FavoriteActivity"
             android:label="@string/title_activity_favorite" >
         </activity>
         <activity
-            android:name=".ReminderActivity"
+            android:name=".StudentDrawer.ReminderActivity"
             android:label="@string/title_activity_reminder" >
         </activity>
         <activity
-            android:name=".Sticky_ReminderActivity"
+            android:name=".StudentDrawer.Sticky_ReminderActivity"
             android:label="@string/title_activity_sticky__reminder" >
         </activity>
         <activity
-            android:name=".MarksheetActivity"
+            android:name=".StudentDrawer.MarksheetActivity"
             android:label="@string/title_activity_marksheet" >
         </activity>
         <activity
-            android:name=".AttendanceActivity"
+            android:name=".StudentDrawer.AttendanceActivity"
             android:label="@string/title_activity_attendance" >
         </activity>
         <activity
-            android:name=".EventsActivity"
+            android:name=".GuestDrawer.EventsActivity"
             android:label="@string/title_activity_events" >
         </activity>
         <activity
-            android:name=".GalleryActivity"
+            android:name=".GuestDrawer.GalleryActivity"
             android:label="@string/title_activity_gallery" >
+        </activity>
+        <activity
+            android:name=".GuestDrawer.MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name=".ParentDrawer.ParentHomeActivity"
+            android:label="@string/title_activity_parent_home" >
+        </activity>
+        <activity
+            android:name=".HodDrawer.HodHomeActivity"
+            android:label="@string/title_activity_hod_home" >
+        </activity>
+        <activity
+            android:name=".StaffDrawer.StaffHomeActivity"
+            android:label="@string/title_activity_staff_home" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.SaveActivity"
+            android:label="@string/title_activity_save" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.ComplaintsActivity"
+            android:label="@string/title_activity_complaints" >
+        </activity>
+        <activity
+            android:name=".LoginModules.Login_Director"
+            android:label="@string/title_activity_login__director" >
+        </activity>
+        <activity
+            android:name=".DirectorDrawer.DirectorHomeActivity"
+            android:label="@string/title_activity_director_home" >
+        </activity>
+        <activity
+            android:name=".Drawer.DirectorDrawerActivity"
+            android:label="@string/title_activity_director_drawer" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.Semester_StudentActivity"
+            android:label="@string/title_activity_semester_student" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.Syllabus_StudentActivity"
+            android:label="@string/title_activity_syllabus_student" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.Events_StudentActivity"
+            android:label="@string/title_activity_events_student" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.Notices_StudentActivity"
+            android:label="@string/title_activity_notices__student" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.TabularActivity"
+            android:label="@string/title_activity_tabular" >
+        </activity>
+        <activity
+            android:name=".ParentDrawer.Parent_AttendanceActivity"
+            android:label="@string/title_activity_parent__attendance" >
+        </activity>
+        <activity
+            android:name=".ParentDrawer.Parent_TabularActivity"
+            android:label="@string/title_activity_parent__tabular" >
+        </activity>
+        <activity
+            android:name=".ParentDrawer.Parents_SyllabusActivity"
+            android:label="@string/title_activity_parents__syllabus" >
+        </activity>
+        <activity
+            android:name=".ParentDrawer.Parents_EventsActivity"
+            android:label="@string/title_activity_parents__events" >
+        </activity>
+        <activity
+            android:name=".ParentDrawer.Parent_NoticeBoardActivity"
+            android:label="@string/title_activity_parent__notice_board" >
+        </activity>
+        <activity
+            android:name=".ParentDrawer.Parent_SemesterActivity"
+            android:label="@string/title_activity_parent__semester" >
+        </activity>
+        <activity
+            android:name=".StaffDrawer.Staff_AttendanceActivity"
+            android:label="@string/title_activity_staff__attendance" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.AttendancePdfActivity"
+            android:label="@string/title_activity_attendance_pdf" >
+        </activity>
+        <activity
+            android:name=".StaffDrawer.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.ListActivity"
+            android:label="@string/title_activity_list" >
+        </activity>
+        <activity
+            android:name=".StudentDrawer.StartActivity"
+            android:label="@string/title_activity_start" >
         </activity>
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" >
+            android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.NewReminderActivity"
+            android:label="@string/title_activity_reminder"
+            android:launchMode="standard">
+
+        </activity>
+        <activity
+            android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.ListRemindersActivity"
+            android:label="@string/title_activity_list_reminders"
+            android:launchMode="standard" >
+        </activity>
+
+        <!-- NOTICE TASK AFFINITY HERE. It is done so that dialogs will not
+        	 bring up other activities stored in memory / history stack  -->
+        <activity
+            android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.PopupDialogActivity"
+            android:label="@string/title_activity_popup_dialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:taskAffinity="portal.msit.com.msitportal.StudentDrawer.Reminder..dialogs"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+
+        <receiver android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.ReminderAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.PopupDialogActivity" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.ReminderWorkerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="portal.msit.com.msitportal.StudentDrawer.Reminder..DELETE" />
+                <action android:name="portal.msit.com.msitportal.StudentDrawer.Reminder..DEACTIVATE" />
+                <action android:name="portal.msit.com.msitportal.StudentDrawer.Reminder..DISMISS" />
+                <action android:name="portal.msit.com.msitportal.StudentDrawer.Reminder..SNOOZE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.RebootAlarmSetterReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="portal.msit.com.msitportal.StudentDrawer.Reminder.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+
+        <activity
+            android:name="portal.msit.com.msitportal.StudentDrawer.Favorite_Activity.ListViewDraggingAnimation"
+            android:label="@string/title_activity_favorite" >
+
         </activity>
     </application>
 

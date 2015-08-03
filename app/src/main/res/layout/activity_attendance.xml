@@ -1,4 +1,111 @@
-<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/pager"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context="portal.msit.com.msitportal.AttendanceActivity" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MonthActivity"
+    android:orientation="vertical"
+    android:id="@+id/abc"
+    style="@style/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/a">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:text="AUGUST"
+            android:id="@+id/month1"
+            android:background="#ff941f81"
+            android:textColor="#ffffffff"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView1"
+            android:src="@android:drawable/ic_media_play"
+            android:background="#ffd8d8d8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="SEPTEMBER"
+            android:id="@+id/month2"
+            android:background="#ff941f81"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView2"
+            android:background="#ffd8d8d8"
+            android:src="@android:drawable/ic_media_play" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:text="OCTOBER"
+            android:id="@+id/month3"
+            android:background="#ff941f81"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView3"
+            android:background="#ffd1d1d1"
+            android:src="@android:drawable/ic_media_play" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:text="NOVEMBER"
+            android:id="@+id/month4"
+            android:background="#ff941f81"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView4"
+            android:background="#ffd1d1d1"
+            android:src="@android:drawable/ic_media_play" />
+    </LinearLayout>
+
+</LinearLayout>

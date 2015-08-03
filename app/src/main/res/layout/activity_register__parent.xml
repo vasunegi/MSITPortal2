@@ -1,99 +1,155 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.msit.portal.Register_student"
-    android:orientation="vertical"
-    android:background="#ff9da3a6">
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:background="@color/bg_login">
 
-    <Spinner
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/dept"
-        android:layout_gravity="center_horizontal"
-        android:spinnerMode="dropdown"
-        android:entries="@array/department_arrays" />
+        android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.msit.portal.Register_Parent"
+        android:orientation="vertical"
+        >
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/name"
-        android:layout_gravity="center_horizontal"
-        android:hint="FULL NAME" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dept"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:entries="@array/department_arrays" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/user"
-        android:layout_gravity="center_horizontal"
-        android:hint="USER" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_parent"
+            android:layout_gravity="center_horizontal"
+            android:hint="FULL NAME"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/number"
-        android:layout_gravity="center_horizontal"
-        android:hint="PHONE NUMBER" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_parent"
+            android:layout_gravity="center_horizontal"
+            android:hint="USER"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:id="@+id/textView"
-        android:hint="DEPARTMENT"
-        android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/phone_parent"
+            android:layout_gravity="center_horizontal"
+            android:hint="PHONE NUMBER"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewdept"
-        android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/deptt_parent"
+            android:hint="DEPARTMENT"
+            android:textSize="20sp"
+            />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/mail"
-        android:layout_gravity="center_horizontal"
-        android:hint="E MAIL" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/depttdisplay_parent"
+            android:layout_gravity="center_horizontal" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/enroll"
-        android:layout_gravity="center_horizontal"
-        android:hint="ENROLLMENT NUMBER" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/email_parent"
+            android:layout_gravity="center_horizontal"
+            android:hint="E MAIL"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/pass"
-        android:layout_gravity="center_horizontal"
-        android:hint="PASSWORD" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/enroll"
+            android:layout_gravity="center_horizontal"
+            android:hint="ENROLLMENT NUMBER"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/re_pass"
-        android:layout_gravity="center_horizontal"
-        android:hint="REENTER YOUR PASSWORD" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/pass_parent"
+            android:layout_gravity="center_horizontal"
+            android:hint="PASSWORD"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REGISTER"
-        android:id="@+id/button"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/re_pass_parent"
+            android:layout_gravity="center_horizontal"
+            android:hint="REENTER YOUR PASSWORD"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"/>
 
-</LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:id="@+id/register_parent"
+            android:layout_marginTop="20dp"
+            android:background="#ea4c88"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/login_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/btn_link_to_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>
