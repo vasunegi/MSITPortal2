@@ -6,7 +6,7 @@ This application was made for five types of audience and provides different view
 3. Teachers.
 4. Directors.
 5. Guest(no login requiered).
--------------------------------------------------------------------------------------------------------------------------------
+
 This application provides basic functionaly:
 1. checking timetable
 2. checking recent activities
