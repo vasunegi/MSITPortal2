@@ -1,5 +1,5 @@
 # MSITPortal2
-This android application was made for Maharaja Surajmal Institute of Technology.
+**This android application was made for Maharaja Surajmal Institute of Technology.**
 This application was made for five types of audience and provides different views of the application depending upon the type of user-
 1. Students. 
 2. Parents.
